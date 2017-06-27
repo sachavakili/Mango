@@ -163,7 +163,7 @@ class RNN_Model:
         return train_op
 
     def add_model(self, inputs_story, inputs_question):
-        qrn = QRNCell(self.config.hidden_size, self.config.hidden_size)
+        qrn = QRNCell(num_units=self.config.hidden_size)
         qrn = tf.contrib.rnn.DropoutWrapper(qrn, input_keep_prob=self.dropout_placeholder,
                                             output_keep_prob=self.dropout_placeholder)
 
