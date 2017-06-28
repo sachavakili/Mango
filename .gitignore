@@ -7,3 +7,5 @@ data.ipynb
 *.icloud
 *.pyc
 logs_*
+babi_tasks_data*
+babi/tasks*
